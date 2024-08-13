@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Gustavo Chávez Sánchez</title>
+    <link rel="stylesheet" href="{% static 'mi_app/css/style.css' %}">
+</head>
+<body>
+    <body>
+        <header>
+            <img src="{% static 'mi_app/images/utc.png' %}" alt="Logo de la Universidad" class="logo">
+            <h1>Bienvenidos...</h1>
+        </header>
+    
+        <div class="container">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="{% url 'inicio' %}">Home</a></li>
+                    <li><a href="{% url 'contacto' %}">Contacto</a></li>
+                    <li><a href="{% url 'musica' %}">Música</a></li>
+                    <li><a href="{% url 'escuela' %}">Escuela</a></li>
+                </ul>
+            </nav>
+    
+            <main>
+                <section id="Datos generales">
+                    <h1>Bienvenidos ami sitio Oficial</h1>
+                    <img src="{% static 'mi_app/images/inge.png' %}" alt="foto ing" class="foto">
+                </section>
+    
+                <section id="informacion">
+                    <h2></h2>
+                    <p>Nombre: Gustavo Chavez Sanchez</p>
+                    <p>Edad: 22 años</p>
+                    <p>Me gusta el fútbol y los tacos.</p>
+                    <input type="text" placeholder="Mensaje">
+                </section>
+    
+        <footer>
+            <p>&copy; 2024 Mi Página Web. Todo lo que debes saber de mí.</p>
+        </footer>
+</body>
+</html>

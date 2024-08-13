@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracias</title>
+    <link rel="stylesheet" href="{% static 'mi_app/css/contacto.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="{% static 'mi_app/images/utc.png' %}" alt="Logo de la Universidad" class="logo">
+            <h1>Gracias</h1>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="{% url 'inicio' %}">Home</a></li>
+                <li><a href="{% url 'contacto' %}">Contacto</a></li>
+                <li><a href="{% url 'musica' %}">Música</a></li>
+                <li><a href="{% url 'escuela' %}">Escuela</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h2>¡Gracias por contactarnos!</h2>
+            <p>Tu mensaje ha sido enviado con éxito. Nos pondremos en contacto contigo pronto.</p>
+            <img src="{% static 'mi_app/images/gracias.png' %}" alt="gracias" class="gracias">
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mi Página Web. Todo lo que debes saber de mí.</p>
+        </div>
+    </footer>
+</body>
+</html>

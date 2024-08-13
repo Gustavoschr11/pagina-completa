@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materias de Gustavo</title>
+    <link rel="stylesheet" href="{% static 'mi_app/css/escuela.css' %}">
+</head>
+<body>
+    <header>
+        <img src="{% static 'mi_app/images/utc.png' %}" alt="Logo de la Universidad" class="logo">
+        <h1>Materias..</h1>
+    </header>
+    
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="{% url 'inicio' %}">Home</a></li>
+                <li><a href="{% url 'contacto' %}">Contacto</a></li>
+                <li><a href="{% url 'musica' %}">Música</a></li>
+                <li><a href="{% url 'escuela' %}">Escuela</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <section id="materias">
+                <div class="materia">
+                    <h3>Matemáticas</h3>
+                    <p>Aprendo sobre álgebra, geometría y cálculo.</p>
+                </div>
+                <div class="materia">
+                    <h3>Física</h3>
+                    <p>Estudiamos las leyes del movimiento y la energía.</p>
+                </div>
+                <div class="materia">
+                    <h3>Química</h3>
+                    <p>Exploramos la composición y propiedades de la materia.</p>
+                </div>
+                <div class="materia">
+                    <h3>Programación</h3>
+                    <p>Desarrollamos habilidades en varios lenguajes de programación.</p>
+                </div>
+                <div class="materia">
+                    <h3>Historia</h3>
+                    <p>Analizamos eventos históricos y su impacto en el mundo actual.</p>
+                </div>
+                <div class="materia">
+                    <h3>Literatura</h3>
+                    <p>Leemos y discutimos obras literarias clásicas y modernas.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mi Página Web. Todo lo que debes saber de mí.</p>
+    </footer>
+</body>

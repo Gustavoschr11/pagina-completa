@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Gustavo Chávez Sánchez</title>
+    <link rel="stylesheet" href="{% static 'mi_app/css/musica.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="{% static 'mi_app/images/utc.png' %}" alt="Logo de la Universidad" class="logo">
+            <h1>Musica..</h1>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="{% url 'inicio' %}">Home</a></li>
+                <li><a href="{% url 'contacto' %}">Contacto</a></li>
+                <li><a href="{% url 'musica' %}">Música</a></li>
+                <li><a href="{% url 'escuela' %}">Escuela</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section id="Datos-generales">
+                <h2>Hola, escucha la musica que me gusta</h2>
+            </section>
+
+            <section id="musica">
+                <h2>Música</h2>
+                <h3>Mis pistas favoritas de reguetón</h3>
+                <div>
+                    <h4>Song 1: Hector el fhater </h4>
+                    <audio controls>
+                        <source src="hector sacala.mp3" type="audio/mp3">
+                        
+                    </audio>
+                </div>
+                <div>
+                    <h4>Song 2: - Hector el fhater</h4>
+                    <audio controls>
+                        <source src="hector trevesuras.mp3" type="audio/mp3">
+                        Tu navegador no soporta la etiqueta de audio.
+                    </audio>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mi Página Web. Todo lo que debes saber de mí.</p>
+        </div>
+    </footer>
+</body>
+</html>

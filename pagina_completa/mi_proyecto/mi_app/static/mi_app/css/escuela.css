@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+
+}
+header {
+    font-family:Bernard MT Condensed;
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+header .logo {
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+.container {
+    max-width: 150rem;
+    margin:  auto;
+    overflow: hidden;
+    padding: 2 2rem;
+}
+
+.navbar ul {
+    padding: 0;
+    list-style: none;
+    background: #444;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+.navbar ul li a:hover {
+    background: #555;
+}
+
+main {
+    padding: 2rem 0;
+}
+
+section#materias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.materia {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin: 1rem;
+    flex: 1 1 calc(33.333% - 2rem);
+    box-sizing: border-box;
+}
+
+.materia h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.materia p {
+    margin: 0.5rem 0 1rem;
+    font-size: 1rem;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5px;
+}
